@@ -17,4 +17,6 @@ app.get('/', function (request, response) {
 // poke api
 
 // start server
-app.listen(3000, _ => console.log("Server started at 3000"))
+const hostname = "localhost"
+const port = 3000
+app.listen(port, _ => console.log(`Server started: http://${hostname}:${port}`))
