@@ -10,11 +10,12 @@ app.use(bodyParser.json())
 app.use(express.static("public"))
 
 // welcome
-app.get('/', function (request, response) {
+app.get("/", function (request, response) {
   response.sendFile('index.html')
 })
 
-// poke api
+// poke api endpoint
+app.use("/api/pokemons", require("./app/pokeApi"))
 
 // start server
 const hostname = "localhost"
