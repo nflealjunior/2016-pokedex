@@ -1,7 +1,9 @@
 # PokedexJS
 
-A simple pokedex in NodeJS. To get the first generation of pokemons just run the command bellow:
+A simple pokedex in NodeJS. To get the first generation of pokemons.
 
+## How to run
 ```
-node catch-them-all
+npm install
+npm start
 ```

@@ -4,7 +4,7 @@
   "description": "A simple pokedex in NodeJS",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node catch-them-all"
   },
   "repository": {
     "type": "git",
