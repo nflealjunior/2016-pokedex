@@ -31,4 +31,3 @@ router.get("/:pokeId", (request, response) => {
 
 // export router
 module.exports = router
-

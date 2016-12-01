@@ -9,9 +9,9 @@ const app = express()
 app.use(bodyParser.json())
 app.use(express.static("public"))
 
-// welcome
+// welcome file
 app.get("/", function (request, response) {
-  response.sendFile('index.html')
+  response.sendFile("index.html")
 })
 
 // poke api endpoint

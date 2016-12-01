@@ -6,7 +6,7 @@
             method: "GET",
             url: "/api/pokemons/" + pokeId
         })
-        .done(function onResponse(pokemon) {
+        .done(pokemon => {
             $("#pokeNumber").val('')
             $(document.body)
             .append('<img src="pokemons/' + pokemon.id + '.png" title="' + pokemon.name + '">');
