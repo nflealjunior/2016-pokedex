@@ -1,10 +1,10 @@
 (function () {
     "use strict"
 
-    function catchPokemon(pokeId) {
+    function catchPokemon(pokeNumber) {
         $.ajax({
             method: "GET",
-            url: "/api/pokemons/" + pokeId
+            url: "/api/pokemons/" + pokeNumber
         })
         .done(pokemon => {
             $("#pokeNumber").val('')
@@ -14,8 +14,8 @@
     }
 
     $("form").on("submit", event => {
-        let pokeId = $("#pokeNumber").val()
-        catchPokemon(pokeId)
+        let pokeNumber = $("#pokeNumber").val()
+        catchPokemon(pokeNumber)
         return false
     })
     
