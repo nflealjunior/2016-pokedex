@@ -25,6 +25,7 @@ function catchPokemon(pokemonNumber) {
             fs.writeFile('public/pokemons/' + pokemonNumber + '.png', buffer, function(err) {
                 if (err) {
                     console.log("Missed Pokemon #" + pokemonNumber);
+                    return;
                 }
                 console.log('Caught Pokemon #' + pokemonNumber);
             });
